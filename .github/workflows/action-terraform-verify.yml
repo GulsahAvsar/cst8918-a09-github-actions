@@ -4,6 +4,7 @@ on:
     branches:
       - main
       - master
+      - test
 
 permissions:
   id-token: write
@@ -49,4 +50,3 @@ jobs:
       - name: Process check
         if: always()
         run: exit $CHECK_STATUS
-        
